@@ -1,6 +1,6 @@
 <div align="center">
 
-# HUNNIGAN
+<img src="docs/assets/hunnigan-logo-readme.png" alt="HUNNIGAN — Model Operating System" width="360">
 
 ### Your personal mission support operator.
 
