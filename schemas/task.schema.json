@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/mos/task.schema.json",
+  "title": "MOS Task",
+  "type": "object",
+  "required": ["schema", "id", "title", "state", "impact", "updated"],
+  "properties": {
+    "schema": {"const": 1},
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "title": {"type": "string", "minLength": 1},
+    "state": {"enum": ["active", "waiting", "blocked", "completed", "cancelled"]},
+    "impact": {
+      "type": "object",
+      "required": ["level"],
+      "properties": {
+        "level": {"enum": ["critical", "high", "medium", "low", "none", "unknown"]}
+      },
+      "additionalProperties": true
+    },
+    "updated": {"type": "string"}
+  },
+  "additionalProperties": true
+}

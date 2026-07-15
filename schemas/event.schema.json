@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/mos/event.schema.json",
+  "title": "MOS Event",
+  "type": "object",
+  "required": ["id", "at", "kind", "note"],
+  "properties": {
+    "id": {"type": "string"},
+    "at": {"type": "string"},
+    "recorded": {"type": "string"},
+    "task": {"type": "array", "items": {"type": "string"}},
+    "kind": {"type": "string"},
+    "sig": {"enum": ["routine", "notable", "major"]},
+    "note": {"type": "string", "minLength": 1}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,16 @@
+# Private runtime state. Initialize these from templates after cloning.
+/PROFILE.md
+/TASK_INDEX.md
+/TASKS.md
+/ACTIVITY_LOG.md
+/activity/
+/archive/
+/.mos/
+
+# Local OS/editor files.
+.DS_Store
+*.swp
+*.swo
+*~
+__pycache__/
+*.pyc
