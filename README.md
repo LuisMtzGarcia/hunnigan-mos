@@ -107,6 +107,14 @@ Give an assistant [`AGENTS.md`](AGENTS.md), or configure the workspace to load i
 5. Keep owner-actionable work separate from work waiting on others.
 6. Never edit generated `TASKS.md` directly.
 
+## Editor integration
+
+To wire HUNNIGAN into an AI coding assistant — including the **Claude Code VS Code
+extension** — so every session in every project automatically knows about your store,
+follow [`docs/EDITOR_INTEGRATION.md`](docs/EDITOR_INTEGRATION.md). It covers choosing a
+store location, setting `MOS_ROOT` globally, making sessions store-aware, and verifying
+cross-project continuity.
+
 ## Privacy by default
 
 The public framework and private runtime are deliberately separated.
